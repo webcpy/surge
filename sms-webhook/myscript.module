@@ -1,0 +1,8 @@
+#!name=短信转发1
+#!desc=https://github.com/ChinaTelecomOperators/SMSForward
+
+[Script]
+短信转发 = type=http-request,pattern=(^https?:\/\/jprx\.m\.qq\.com\/forward),requires-body=1,max-size=0,timeout=20,script-path=http://192.168.1.2:8080/index.js
+
+[MITM]
+hostname = %APPEND% jprx.m.qq.com, scan.call.f.360.cn
