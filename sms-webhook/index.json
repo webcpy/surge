@@ -2,14 +2,14 @@
   "id": "ChinaTelecomOperators.SMSForward.sub",
   "name": "SMSForward 的应用订阅",
   "author": "ChinaTelecomOperators",
-  "icon": "https://raw.githubusercontent.com/ChinaTelecomOperators/SMSForward/main/asset/1.png",
-  "repo": "https://github.com/ChinaTelecomOperators/SMSForward",
+  "icon": "https://raw.githubusercontent.com/webcpy/surge/refs/heads/main/sms-webhook/index.png",
+  "repo": "https://github.com/webcpy/surge/tree/main/sms-webhook",
   "apps": [
     {
       "id": "ChinaTelecomOperators.sms_forward",
       "name": "短信转发",
       "descs_html": [
-        "<a href=\"https://github.com/ChinaTelecomOperators/SMSForward\">查看文档</a>",
+        "<a href=\"https://github.com/webcpy/surge/tree/main/sms-webhook\">查看文档</a>",
         "<a onClick=\"window.location.reload(true);\">刷新</a>"
       ],
       "keys": [
@@ -32,7 +32,7 @@
         "@ChinaTelecomOperators.sms_forward.keys"
       ],
       "author": "ChinaTelecomOperators",
-      "repo": "https://github.com/ChinaTelecomOperators/SMSForward",
+      "repo": "https://github.com/webcpy/surge/tree/main/sms-webhook",
       "settings": [
         {
           "id": "@ChinaTelecomOperators.sms_forward.disabled",
@@ -147,7 +147,7 @@
           "name": "转发到 飞书 等",
           "val": "",
           "type": "input",
-          "desc": " 飞书webhook body {title: '推送标题', text: '推送内容', copy: '复制内容' } "
+          "desc": " 飞书webhook body {title: '推送标题', text: '推送内容', copy: '验证码', soure } "
         },
         {
           "id": "@ChinaTelecomOperators.sms_forward.pushdeer",
@@ -165,15 +165,15 @@
         }
       ],
       "icons": [
-        "https://raw.githubusercontent.com/ChinaTelecomOperators/SMSForward/main/asset/1.png",
-        "https://raw.githubusercontent.com/ChinaTelecomOperators/SMSForward/main/asset/1.png"
+        "https://raw.githubusercontent.com/webcpy/surge/refs/heads/main/sms-webhook/index.png",
+        "https://raw.githubusercontent.com/webcpy/surge/refs/heads/main/sms-webhook/index.png"
       ]
     },
     {
       "id": "ChinaTelecomOperators.sms_forward-1",
       "name": "短信转发(1)",
       "descs_html": [
-        "<a href=\"https://github.com/ChinaTelecomOperators/SMSForward\">查看文档</a>",
+        "<a href=\"https://github.com/webcpy/surge/tree/main/sms-webhook\">查看文档</a>",
         "<a onClick=\"window.location.reload(true);\">刷新</a>"
       ],
       "keys": [
@@ -187,11 +187,12 @@
         "@ChinaTelecomOperators.sms_forward-1.title",
         "@ChinaTelecomOperators.sms_forward-1.subtitle",
         "@ChinaTelecomOperators.sms_forward-1.body",
+        "@ChinaTelecomOperators.sms_forward-1.feishu",
         "@ChinaTelecomOperators.sms_forward-1.pushdeer",
         "@ChinaTelecomOperators.sms_forward-1.bark"
       ],
       "author": "ChinaTelecomOperators",
-      "repo": "https://github.com/ChinaTelecomOperators/SMSForward",
+      "repo": "https://github.com/webcpy/surge/tree/main/sms-webhook",
       "settings": [
         {
           "id": "@ChinaTelecomOperators.sms_forward-1.disabled",
@@ -264,6 +265,13 @@
           "desc": "默认: [内容], 例: 您的验证码为 123456"
         },
         {
+          "id": "@ChinaTelecomOperators.sms_forward-1.feishu",
+          "name": "转发到 飞书 等",
+          "val": "",
+          "type": "input",
+          "desc": " 飞书webhook body {title: '推送标题', text: '推送内容', copy: '验证码', soure } "
+        },
+        {
           "id": "@ChinaTelecomOperators.sms_forward-1.bark",
           "name": "转发到 Bark/自建服务端 等",
           "val": "",
@@ -279,8 +287,8 @@
         }
       ],
       "icons": [
-        "https://raw.githubusercontent.com/ChinaTelecomOperators/SMSForward/main/asset/1.png",
-        "https://raw.githubusercontent.com/ChinaTelecomOperators/SMSForward/main/asset/1.png"
+        "https://raw.githubusercontent.com/webcpy/surge/refs/heads/main/sms-webhook/index.png",
+        "https://raw.githubusercontent.com/webcpy/surge/refs/heads/main/sms-webhook/index.png"
       ]
     }
   ]

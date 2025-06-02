@@ -295,7 +295,7 @@ async function notify(title, subtitle, body, { copy, KEY_PUSHDEER, KEY_BARK, KEY
           body: {
             title,
             subtitle,
-            content: body,
+            text: body,
             copy
           }
         })
